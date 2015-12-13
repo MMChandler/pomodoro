@@ -1,33 +1,165 @@
-html { 
-  background: url("https://farm6.staticflickr.com/5699/22959969033_0ad584039a_h.jpg") no-repeat center center fixed; 
+ html {
+  background: url("https://farm6.staticflickr.com/5699/22959969033_0ad584039a_h.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+  font-family: 'PT Sans Narrow', helvetica;
 }
- body {
-  background-color: rgba(0,0,0,.7);
-  /* Transparent color for IE 5.5 - 7*/    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-    /*Transparent color for IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-   /*end IE hacks------*/
-   
-  height: 100vh;
-  width: 100vw; 
+
+body {
+  background-color: rgba(0, 0, 0, .7);
+  /* Transparent color for IE 5.5 - 7*/
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /*Transparent color for IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  /*end IE hacks------*/
+  height: 150vh;
+  width: 100vw;
 }
- div, h1, h2, p, span{
+
+div,
+h1,
+h2,
+p,
+span,
+aside {
   color: white;
 }
-#copyright {
-  position: fixed;
-  top: 95vh;
-  left: 2vw;
-  color: lightgray;
- 
+
+aside {
+  float: right;
+  margin-right: 2em;
+  margin-left: 500px;
+  text-align: right;
+  margin-top: 30vh;
+  background: rgba(0, 0, 0, .4);
+  padding: 2em;
+  position: absolute;
+  width: 170px;
+  overflow: hidden;
 }
+#statusIcon {
+  float: right;
+  
+  margin-left: 670px;
+  text-align: center;
+  margin-top: 30vh;
+  background: rgba(0, 0, 0, .4);
+  padding: 1em;
+  position: absolute;
+  width: 30vw;
+  height: 276px;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 100px;
+  font-size: 3.3em;
+}
+#coffee, #paperclip{
+  opacity: .4;
+}
+#copyright {
+  position: relative;
+  top: 85%;
+  color: lightgray;
+  z-index: 1002;
+  font-size: 14px;
+  float: right;
+  text-align: right;
+  right: 2em;
+  margin-bottom: -2em;
+  padding-bottom: -2em;
+}
+
 h1 {
   margin-top: 0;
   margin-left: 0;
   padding: 1.5vw;
 }
+
+#timerComponents {
+  /*background: url("https://dl.dropboxusercontent.com/u/75565331/web_img/stopwatchClear.png") no-repeat 50% 50%;*/
+  width: 219px;
+  height: 245px;
+  position: absolute;
+  left: 7.8em;
+  top: 18.8em;
+  right: ;
+  z-index: 1001;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 50%;
+  border: 1px solid white;
+  text-align: center;
+  vertical-align: middle;
+}
+#status {
+  line-height: 130px;
+  color: black;
+  font-size: 150%;
+}
+.timeDisplay{
+  color: black;
+  font-size: 250%;
+  margin-top: 0;
+  padding-top: 0;
+  font-style: italic;
+}
+#timerBody img {
+  margin: 0;
+  padding-left: 2.7em;
+  top: 5em;
+  z-index: 1000;
+  position: absolute;
+  color: black;
+  
+}
+
+#title {
+  background-color: rgba(0, 0, 0, .4);
+  /* Transparent color for IE 5.5 - 7*/
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /*Transparent color for IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  /*end IE hacks------*/
+  font-family: Lobster;
+  font-size: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+#timeNow {
+  font-size: 75%;
+  float: right;
+  margin-right: 3em;
+  margin-top: .5em;
+}
+#soundCredit {
+  opacity: .7;
+  font-size: 12px;
+}
+
+
+/*button behaviors: */
+
+button {
+  color: white;
+  border-radius: 20%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: .8;
+  font-family: 'PT Sans Narrow', sans-serif;
+  position: relative;
+  margin: .1em;
+  z-index: 1010;
+}
+
+#buttonSet {
+  position: absolute;
+  padding: .4em;
+  margin: .4em;
+}
+
+button:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-weight: bold;

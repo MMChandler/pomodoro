@@ -1,9 +1,42 @@
 <!doctype html>
 <head><title>Pomodoro Timer</title></head>
 <body>
-  <h1>Pomodoro Timer</h1>
+  <h1 id="title">Pomodoro Timer <span id="timeNow"></span></h1>
   <div id="timerBody">
-  
+    <div id="timerComponents">
+      <div id="timeDisplay">
+        <span id="status">Work Time</span></br>
+        <span class="timeDisplay" id="minutes">25</span>
+        <span class="timeDisplay" id="seperator">:</span>
+        <span class="timeDisplay" id="seconds">00</span>
+      </div>
+    </div>
+    <img src="https://dl.dropboxusercontent.com/u/75565331/web_img/stopwatchClear.png" width="397" height="520" alt="stopwatch">
+
   </div>
-  <div id="copyright">© Michael M. Chandler, 2015</div>
+
+  <aside>The Pomodoro Timer defaults</br> to a work time of 25 minutes</br> and a break time of five minutes.</br> Just hit the start button to use</br> the default timer, and reset to stop.</br>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Pomodoro_Technique"><i class="fa fa-info-circle"></i>&nbspMore</a>
+  </aside>
+  <div id="statusIcon"><i class='fa fa-coffee' id='coffee'>&nbsp</i>&nbsp<i class='fa fa-paperclip' id='paperclip'>&nbsp</i>&nbsp</div>
+<!--Buttons!=======================-->
+  <div id="buttonSet">
+    <button id="start"><i class="fa fa-clock-o"></i>&nbspStart </button>
+    </br>
+    <button id="reset" onclick="resetTimer()">&nbspReset&nbsp</button>
+    </br>
+    <button id="add5" onclick="addFive()"><i class="fa fa-plus-square"></i>&nbsp5 min</button>
+    </br>
+    <button id="subtract5" onclick="subtractFive()"><i class="fa fa-minus-square"></i>&nbsp5 min</button>
+  </div>
+<!--END buttons ===================-->
+  
+<div class="title" id="statusView">
+</div>
+  <div id="copyright">© Michael M. Chandler, 2015
+  <span id="soundCredit"></br>(Chime © skowm_001 at www.freesound.org)</span>
+  </div>
+<audio src="https://dl.dropboxusercontent.com/u/75565331/268076__skowm001__2-tone-chime.wav" 	
+ id="chime" preload>
 </body>
+</html>
